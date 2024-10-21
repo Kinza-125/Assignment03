@@ -1,19 +1,15 @@
-import React from 'react'
-import Header from './components/Header'
-import Footer from './components/Footer/Footer'
-import Hero from './components/Hero/Hero'
-import About from './about/page'
-import Portfolio from './portfolio/page'
 
-export default function Home(){
-  return(
-    <div>
-      
-        <Header></Header>
-        <Hero></Hero>
-        <About></About>
-        <Portfolio></Portfolio>
-        <Footer></Footer>
-    </div>
-  )
-}
+
+
+const Portfolio = () => {
+    return (
+      <section id="portfolio" className="py-16 bg-gray-700">
+        <div className="container mx-auto text-center">
+          <h2 className="text-4xl text-white font-bold mb-4">My Projects</h2>
+          <p className="text-lg text-white">Here are some of my recent assignments and portfolio pieces.</p>
+        </div>
+      </section>
+    );
+  };
+  
+  export default Portfolio;
